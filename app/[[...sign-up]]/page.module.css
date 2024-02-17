@@ -1,0 +1,30 @@
+.grid {
+    height: 100vh;
+    overflow: hidden;
+
+    .imageCol {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: calc(var(--mantine-spacing-xl) * 2);
+        align-items: center;
+
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+    .formCol {
+        padding: var(--mantine-spacing-xl);
+    }
+}
+
+[data-mantine-color-scheme='light'] .imageCol {
+    background-color: var(--mantine-color-gray-1);
+}
+
+[data-mantine-color-scheme='dark'] .imageCol {
+    background-color: var(--mantine-color-dark-8);
+}
